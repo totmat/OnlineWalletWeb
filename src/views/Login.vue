@@ -1,5 +1,6 @@
 <template>
-  
+<div class="login">
+
  <div>
    <h2>Online Wallet webpage</h2>
 <div class="form-group">
@@ -8,17 +9,17 @@
     
     
  </div>
-
+</div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '@/components/Login.vue'
 
 export default {
-  name: 'Home',
+  name: 'login',
   components: {
-    HelloWorld
+    Login
   }
 }
 </script>
