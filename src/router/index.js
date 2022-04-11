@@ -20,7 +20,13 @@ const routes = [
   path:'/felhasznalok',
   name:'felhasznalok',
   component: () => import('../views/Felhasznalok.vue')
+  },
+  { 
+    path:'/bankkartyak',
+    name:'bankkartyak',
+    component: () => import('../views/Bankkartyak.vue')
   }
+    
 ]
 
 const router = createRouter({

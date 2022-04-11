@@ -1,9 +1,13 @@
 <template>
   <h1>adatok</h1>
-  <div class="card" v-for="a in adatok" :key="a.id">
+  <div class="row">
+      
+  <div class="card col-lg-3 col-md-4" v-for="a in adatok" :key="a.id">
       <div class="card-body">
           <h2>{{a.nev}}</h2>
+          <h3>{{a.email}}</h3>
       </div>
+  </div>
   </div>
 </template>
 
