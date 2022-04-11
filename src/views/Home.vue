@@ -1,5 +1,4 @@
 <template>
-  <h2>Bejelentkezés</h2><br>    
     <div class="login">    
     <form id="login" method="get" action="login.php">    
         <label><b>Felhasználó neve     
@@ -18,20 +17,42 @@
            
     </form>     
     </div>
-
+<br>
+  <h1>adatok</h1>
+  <div class="card" v-for="a in adatok" :key="a.id">
+      <div class="card-body">
+          <h2>{{a.nev}}</h2>
+      </div>
+  </div>
 </template>
+
+
+
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-
+import axios from "axios"
 export default {
   name: 'Home',
   components: {
     HelloWorld
   }
+  ,data()
+    {
+        return{
+            adatok: []
+        }
+    },
+    created()
+    {
+        axios.get("http://localhost:5000/api/Felhasznalok")
+        .then(response => {this.adatok = response.data})
+        .catch((error) =>console.log(error))
+    }
 }
 </script>
+
 <style scoped>
 body  
 {  
