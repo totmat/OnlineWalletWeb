@@ -17,13 +17,7 @@
            
     </form>     
     </div>
-<br>
-  <h1>adatok</h1>
-  <div class="card" v-for="a in adatok" :key="a.id">
-      <div class="card-body">
-          <h2>{{a.nev}}</h2>
-      </div>
-  </div>
+
 </template>
 
 
