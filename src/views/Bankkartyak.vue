@@ -18,9 +18,11 @@
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcard_icon.png" height="250px"></h6>
           
         </div>
-        <div class="back card-block"  v-for="a in adatok" :key="a.id">
-            <h3>{{a.kartyaszam}}</h3>
-            <h3>{{a.kartyanev}}</h3>
+        <div class="back card-block"  v-for="a in adatok" :key="a.cardNumber">
+            <h3>{{a.cardNumber}}</h3>
+            <h3>{{a.date}}</h3>
+            <h3>{{a.securityCode}}</h3>
+            
          
         </div>
       </div>
@@ -34,9 +36,9 @@
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcardback_icon.png" height="250px" alt=""></h6>
           <p class="card-text"></p>
         </div>
-        <div class="back card-block" v-for="a in adatok" :key="a.id">
-            <h3 >Kártya Pin</h3>
-            <h3>{{a.kartya_pin}}</h3>
+        <div class="back card-block" v-for="a in adatok" :key="a.cardNumber">
+            <h3 >Kártya biztonsági kódja </h3>
+            <h3>{{a.securityCode}}</h3>
            
 
 
@@ -116,7 +118,7 @@ data(){
 },
 created()
 {
-     axios.get("http://localhost:5000/api/bankkartya/")
+     axios.get("http://localhost:5000/api/bankkartyak/")
         .then(response => {this.adatok = response.data})
         .catch((error) =>console.log(error))
 }
