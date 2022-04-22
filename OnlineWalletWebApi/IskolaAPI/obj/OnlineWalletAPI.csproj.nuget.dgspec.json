@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj": {}
+    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {}
   },
   "projects": {
-    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj": {
+    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj",
-        "projectName": "IskolaAPI",
-        "projectPath": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj",
+        "projectUniqueName": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+        "projectName": "OnlineWalletAPI",
+        "projectPath": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
         "packagesPath": "C:\\Users\\aradi\\.nuget\\packages\\",
         "outputPath": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
         "projectStyle": "PackageReference",
@@ -57,10 +57,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
