@@ -37,25 +37,24 @@
 
      
  </div>
- <div class="container">
+ <div class="container mt-12">
   <div class="row">
-    <div class="col-md-4">
-      <div class="card card-1" v-for="a in adatok" :key="a.id">
-        <h3>{{a.fullname}}</h3>
-      </div>
-    </div>
-    <div class="col-md-4">
+<div class="col-md-4">
       <div class="card card-2" v-for="a in adatok" :key="a.id">
         <h3>{{a.username}}</h3>
       
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card card-3"  v-for="a in adatok" :key="a.id">
+    <div class="card col-sm-4" v-for="a in adatok" :key="a.id">
+      
+       <div class="card-body col-sm-12 card-1  ">
+        <h3>{{a.fullname}}</h3>
+        <h3>{{a.username}}</h3>
         <h3>{{a.email}}</h3>
-        
       </div>
     </div>
+    
+   
   </div>
 </div>
 </template>
@@ -149,9 +148,9 @@ export default {
 .card-body{
     background-color:aliceblue;
    /* background-image: url("../assets/person_icon.png");*/
-    min-width: 500px;
-    height: 500px;
-    text-align: right;
+    min-width: 100px;
+    height: 200px;
+    text-align: center;
 }
 
 .login{  

@@ -1,30 +1,52 @@
 <template>
 
 
- <div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card card-1" v-for="a in adatok" :key="a.id">
+ <div class="container" v-for="a in adatok" :key="a.id">
+  <div class="row" >
+    <div class="col-md-4" >
+      <div class="card card-1" >
         <h3>Dokumentum száma</h3>
         <h3>{{a.documentId}}</h3>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card card-2" v-for="a in adatok" :key="a.id">
+      <div class="card card-2">
         <h3>Teljes neve</h3>
         <h3>{{a.fullname}}</h3>
       
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card card-3"  v-for="a in adatok" :key="a.id">
+      <div class="card card-3"  >
         <h3>{{a.gender}}</h3>
         
       </div>
     </div>
   </div>
  </div>
- 
+
+<div class="container mt-8">
+    <div class="row">
+      <div class="card col-sm-3 "  v-for="a in adatok" :key="a.id" >
+        <div class="card-body col-sm-4">
+           
+        <h3>Dokumentum száma</h3>
+        <h3>{{a.documentId}}</h3>
+      
+          <p class="title">{{a.fullname}}</p>
+          <p>{{a.gender}}</p>
+          <p>{{a.year}}</p>
+
+          
+
+        </div>
+     
+      </div>
+     
+    </div>
+  </div>
+  
+
   
 </template>
 
@@ -34,7 +56,10 @@ export default {
   data()
   {
     return{
-      adatok:[]
+      adatok:[],
+       movies:[], 
+      description:[],
+      original_title_romanised:[]
     }
   },created()
     {
@@ -42,7 +67,15 @@ export default {
         axios.get("http://localhost:5000/api/Igazolvanyok")
         .then(response => {this.adatok = response.data})
         .catch((error) =>console.log(error))
-    }
+    },
+  mounted()
+  {
+    axios.get("https://ghibliapi.herokuapp.com/films").then(response =>{this.movies=[...response.data].slice(0,20)})
+    axios.get("https://ghibliapi.herokuapp.com/films").then(response =>{this.description=[...response.data.slice(0,20)]})
+    axios.get("https://ghibliapi.herokuapp.com/films").then(response =>{this.original_title_romanised=[...response.data.slice(0,20)]})
+    
+     
+  }
   
 }
 </script>
