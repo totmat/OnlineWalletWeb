@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row text-center">
-    <div class="col-md-4 card-container">
+    <div class="col-md-3 card-container">
       <div class="card card-flip">
         <div class="front card-block">
           <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 card-container">
+    <div class="col-md-3 card-container">
       <div class="card card-flip">
         <div class="front card-block">
           <h4 class="card-title">Kártya további adatai

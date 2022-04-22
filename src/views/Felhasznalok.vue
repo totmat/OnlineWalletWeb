@@ -5,12 +5,12 @@
         <div class="box">
             <form @submit.prevent="kuldes">
                 <div class="login">
-                    <label>ID</label><br>
-                    <input type="text" name="ID" v-model="id">
+                   
                     <label>Név</label><br>
                     <input type="text" name="nev" v-model="nev" >
                     <br>
                     <label >Felhasznaló neve</label>
+                    <br>
                     <input type="text" name="username" v-model="username">
                     <br>
                     <label >jelszó</label>
