@@ -32,7 +32,7 @@ namespace IskolaAPI.Controllers
         //Id alapján - kitöltött adatok esetén sikeresen továbbítja az adatot az adatbázisba
         //összes adat kitöltése esetén küldi el a POST üzenetet / tesztelve RESTED google
         //PostMan - csak json adatot feltöltése lehetséges
-        
+
         //POST: api/postfelhasznalok
         [HttpPost]
         [Route("api/postfelhasznalok")]
@@ -48,7 +48,7 @@ namespace IskolaAPI.Controllers
         public async Task<IActionResult> DeleteFelhasznalok(int id)
         {
             var felhasznalok = await _context.felhasznalo.FindAsync(id);
-            if(felhasznalok == null)
+            if (felhasznalok == null)
             {
                 return NotFound();
             }

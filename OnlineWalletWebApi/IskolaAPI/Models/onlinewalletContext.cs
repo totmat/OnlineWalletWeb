@@ -26,7 +26,7 @@ namespace IskolaAPI.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=localhost;user id=root;database=onlinewallet", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.17-mariadb"));
+                optionsBuilder.UseMySql("server=localhost;user id=root;database=onlinewallet", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.6-mariadb"));
             }
         }
 
@@ -37,21 +37,12 @@ namespace IskolaAPI.Models
 
             modelBuilder.Entity<bankkartya>(entity =>
             {
-                entity.HasKey(e => e.cardNumber)
-                    .HasName("PRIMARY");
-
                 entity.UseCollation("utf8mb4_hungarian_ci");
             });
 
             modelBuilder.Entity<felhasznalo>(entity =>
             {
                 entity.UseCollation("utf8mb4_hungarian_ci");
-            });
-
-            modelBuilder.Entity<igazolvany>(entity =>
-            {
-                entity.HasKey(e => e.doucmentId)
-                    .HasName("PRIMARY");
             });
 
             OnModelCreatingPartial(modelBuilder);

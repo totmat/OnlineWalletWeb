@@ -12,7 +12,10 @@ namespace IskolaAPI.Models
     {
         [Key]
         [Column(TypeName = "int(11)")]
-        public int doucmentId { get; set; }
+        public int ID { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string documentId { get; set; }
         [Required]
         [StringLength(255)]
         public string fullname { get; set; }

@@ -12,7 +12,10 @@ namespace IskolaAPI.Models
     {
         [Key]
         [Column(TypeName = "int(11)")]
-        public int cardNumber { get; set; }
+        public int ID { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string cardNumber { get; set; }
         [Required]
         [StringLength(255)]
         public string date { get; set; }

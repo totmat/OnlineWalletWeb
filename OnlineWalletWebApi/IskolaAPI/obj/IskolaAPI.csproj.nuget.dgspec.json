@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Negyedik félév\\c#\\c#api\\Megoldás\\IskolaAPI\\IskolaAPI.csproj": {}
+    "C:\\Users\\sz0aratam\\Pictures\\web\\OnlineWalletWeb-master\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj": {}
   },
   "projects": {
-    "D:\\Negyedik félév\\c#\\c#api\\Megoldás\\IskolaAPI\\IskolaAPI.csproj": {
+    "C:\\Users\\sz0aratam\\Pictures\\web\\OnlineWalletWeb-master\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Negyedik félév\\c#\\c#api\\Megoldás\\IskolaAPI\\IskolaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sz0aratam\\Pictures\\web\\OnlineWalletWeb-master\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj",
         "projectName": "IskolaAPI",
-        "projectPath": "D:\\Negyedik félév\\c#\\c#api\\Megoldás\\IskolaAPI\\IskolaAPI.csproj",
-        "packagesPath": "C:\\Users\\aradi\\.nuget\\packages\\",
-        "outputPath": "D:\\Negyedik félév\\c#\\c#api\\Megoldás\\IskolaAPI\\obj\\",
+        "projectPath": "C:\\Users\\sz0aratam\\Pictures\\web\\OnlineWalletWeb-master\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\IskolaAPI.csproj",
+        "packagesPath": "C:\\Users\\sz0aratam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sz0aratam\\Pictures\\web\\OnlineWalletWeb-master\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aradi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sz0aratam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

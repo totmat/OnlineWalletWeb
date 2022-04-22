@@ -37,7 +37,7 @@ namespace IskolaAPI.Controllers
         {
             _context.Add(bankkartya);
             await _context.SaveChangesAsync();
-            return bankkartya.cardNumber;
+            return bankkartya.ID;
         }
 
     }
