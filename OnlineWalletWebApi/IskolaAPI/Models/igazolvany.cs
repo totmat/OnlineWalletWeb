@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
-namespace IskolaAPI.Models
+namespace OnlineWalletAPI.Models
 {
     public partial class igazolvany
     {

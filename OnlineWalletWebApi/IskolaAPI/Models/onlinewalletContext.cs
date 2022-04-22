@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace IskolaAPI.Models
+namespace OnlineWalletAPI.Models
 {
     public partial class onlinewalletContext : DbContext
     {
