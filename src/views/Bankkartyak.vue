@@ -142,9 +142,6 @@ created()
 }  
  
 /* for demo purposes */
-body {
-  background: rgb(245, 243, 243);
-}
 
 .card-block .btn-outline-primary {
   width: 100%;

@@ -1,10 +1,10 @@
 <template>
   <h1>adatok</h1>
-<div class="container">
-  <div class="col-lg-6">
-        <div class="box">
+<div class="container mt-12">
+  <div class="col-lg-5">
+        <div class="box card">
             <form @submit.prevent="kuldes">
-                <div class="login">
+                <div class="login ">
                    
                     <label>Név</label><br>
                     <input type="text" name="nev" v-model="nev" >
@@ -20,8 +20,10 @@
                     <label>email</label>
                     <br>
                     <input type="text" name="email" v-model="email">
+                    <br>
+                    <input type="submit" value="Jelentkezés" />
                 </div>
-                 <input type="submit" value="Jelentkezés" />
+                
             </form>
              <table>
       <tr>
@@ -34,12 +36,9 @@
         </div>
     </div>
   
-
-     
- </div>
- <div class="container mt-12">
+<div>
   <div class="row">
-<div class="col-md-4">
+<div class="col-md-6">
       <div class="card card-2" v-for="a in adatok" :key="a.id">
         <h3>{{a.username}}</h3>
       
@@ -57,6 +56,9 @@
    
   </div>
 </div>
+     
+ </div>
+ 
 </template>
 
 <script>
@@ -134,11 +136,8 @@ export default {
 
 .container {
 
-  gap: 10px;
-  gap: 10px 20px; /* row-gap column gap */
-  row-gap: 10px;
-  column-gap: 20px;
   text-align: center;
+  background-image: url('../assets/usercard.gif');
 
 }
 .box
@@ -146,15 +145,16 @@ export default {
     text-align: center;
 }
 .card-body{
-    background-color:aliceblue;
+    /*background-color:aliceblue;*/
    /* background-image: url("../assets/person_icon.png");*/
     min-width: 100px;
     height: 200px;
     text-align: center;
+    background-image: url('../assets/usercard.gif');
 }
 
 .login{  
-        width: 400px;  
+        width: 360px;  
         overflow: hidden; 
         margin: 10px 10px 10px 20px;  
         padding: 20px;  
@@ -175,14 +175,19 @@ export default {
 body{
   font-family: 'Nunito', sans-serif;
   padding: 50px;
-}
+ 
+  
+  }
+
 .card{
     border-radius: 4px;
     background: #fff;
+    margin: 10px;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.4s box-shadow,.4s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   padding: 14px 80px 18px 36px;
   cursor: pointer;
+  
 }
 
 .card:hover{
