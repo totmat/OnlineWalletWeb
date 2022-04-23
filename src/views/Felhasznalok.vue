@@ -4,8 +4,7 @@
   <div class="col-lg-5">
         <div class="box">
             <form @submit.prevent="kuldes" >
-                <div class="login ">
-                   
+                <div class="adatfelvetel">
                     <label>Név</label><br>
                     <input type="text" name="nev" v-model="nev" >
                     <br>
@@ -23,42 +22,26 @@
                     <br>
                     <input type="submit" value="Jelentkezés" />
                 </div>
-                
             </form>
-             <table>
-      <tr>
-        <td>{{nev}}</td>
-        <td>{{username}}</td>
-        <td>{{password}}</td>
-        <td>{{email}}</td>
-      </tr>
-    </table>
         </div>
     </div>
-  
-<div>
-  <div class="row">
-<div class="col-md-8" >
-      <div class="card card-4" v-for="a in adatok" :key="a.id">
-        <h3>{{a.username}}</h3>
-      
+    <div>
+      <div class="row">
+        <div class="col-md-8" >
+            <div class="card card-4" v-for="a in adatok" :key="a.id">
+              <h3>{{a.username}}</h3>
+            </div>
+        </div>
+        <div class="card col-sm-5 " v-for="a in adatok" :key="a.id">
+          <div class="card-body col-sm-12   ">
+            <h3>{{a.fullname}}</h3>
+            <h3>{{a.username}}</h3>
+            <h3>{{a.email}}</h3>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card col-sm-5 " v-for="a in adatok" :key="a.id">
-      
-       <div class="card-body col-sm-12   ">
-        <h3>{{a.fullname}}</h3>
-        <h3>{{a.username}}</h3>
-        <h3>{{a.email}}</h3>
-      </div>
-    </div>
-    
-   
-  </div>
-</div>
-     
+    </div> 
  </div>
- 
 </template>
 
 <script>
@@ -145,39 +128,30 @@ export default {
     text-align: center;
 }
 .card-body{
-    /*background-color:aliceblue;*/
-   /* background-image: url("../assets/person_icon.png");*/
     min-width: 100px;
     height: 200px;
     text-align: center;
     background-image: url('../assets/usercard.gif');
 }
 
-.login{  
+.adatfelvetel{  
         width: 360px;  
         overflow: hidden; 
         margin: 10px 10px 10px 20px;  
         padding: 20px;  
         background: #919fbd;  
         border-radius: 15px ;
-        border: solid 5px #4975d3;
-        
-
-          
+        border: solid 5px #4975d3;        
 }  
 .btn 
-{
-    
+{ 
     width:300px;
     background-color: #1a4fc2;
 }
 
 body{
   font-family: 'Nunito', sans-serif;
-  padding: 50px;
- 
- 
-  
+  padding: 50px; 
   }
 
 .card{
@@ -185,9 +159,9 @@ body{
     background: #fff;
     margin: 10px;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.4s box-shadow,.4s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.4s box-shadow,.4s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
   
 }
 

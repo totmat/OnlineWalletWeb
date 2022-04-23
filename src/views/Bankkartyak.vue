@@ -6,21 +6,17 @@
     <div class="col-md-3 card-container">
       <div class="card card-flip">
         <div class="front card-block">
-          <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
-          <span class="card-img-top fa" style="font-size: 4em">
-              </span>
-         
-          <h4 class="card-title">Kártyák számai: <br>
-          
-          </h4>
-           
+          <h4 class="card-title">Kártyák számai: <br></h4>
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcard_icon.png" height="250px"></h6>
-          
         </div>
         <div class="back card-block"  v-for="a in adatok" :key="a.id">
           <div class="card-body col-sm-6 card-1">
-            <div class="card"><h3 > Kártyák számai: {{a.documentId}}</h3> </div>       
-        </div>
+            <div class="card">
+              <h3> 
+                Kártyák számai: {{a.documentId}}
+              </h3> 
+            </div>       
+          </div>
         </div>
       </div>
     </div>
@@ -32,20 +28,17 @@
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcardback_icon.png" height="250px" alt=""></h6>
           <p class="card-text"></p>
         </div>
-        
-
         <div class="back card-block" v-for="a in adatok" :key="a.id">
           <div class="card-body col-sm-6 card-1">
             <div class="card">
               <h3 >Kártya biztonsági kódja: {{a.securityCode}} </h3>
               <div class="card"><h3>Lejárati dátuma : {{a.date}}</h3></div>
             </div>
-        
           </div>
         </div>
       </div>
     </div>
- <div class="col-md-4 card-container">
+    <div class="col-md-4 card-container">
       <div class="card card-flip">
         <div class="front card-block">
           <h4 class="card-title">További adatok hozzáadása</h4>
@@ -54,39 +47,33 @@
         </div>
         <div class="back card-block">
           <div class="container">
-<div class="row ">
-    <div class="col-xs-2">
-        <div class="box">
-            <form>
-                <div class="login">
-                    <label>Név</label><br>
-                    <input type="text" >
-                    <br>
-                    <label >Felhasznaló neve</label>
-                    <input type="text">
-                    <br>
-                    <label >jelszó</label>
-                    <br>
-                    <input type="text" >
-                    <br>
-                    <label>email</label>
-                    <br>
-                    <input type="text" >
+            <div class="row ">
+                <div class="col-xs-2">
+                    <div class="box">
+                        <form>
+                            <div class="login">
+                                <label>Név</label><br>
+                                <input type="text" >
+                                <br>
+                                <label >Felhasznaló neve</label>
+                                <input type="text">
+                                <br>
+                                <label >jelszó</label>
+                                <br>
+                                <input type="text" >
+                                <br>
+                                <label>email</label>
+                                <br>
+                                <input type="text" >
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-        </div>
-    </div>
-  
-</div>
-     
- </div>
-        
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-   
-   
   </div>
 </div>
 

@@ -1,53 +1,18 @@
 <template>
-
-<!--
- <div class="container" v-for="a in adatok" :key="a.id">
-  <div class="row" >
-    <div class="col-md-4" >
-      <div class="card card-1" >
-        <h3>Dokumentum száma</h3>
-        <h3>{{a.documentId}}</h3>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card card-2">
-        <h3>Teljes neve</h3>
-        <h3>{{a.fullname}}</h3>
-      
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card card-3"  >
-        <h3>{{a.gender}}</h3>
-        
-      </div>
-    </div>
-  </div>
- </div>
--->
 <div class="container mt-4">
     <div class="column">
       <div class="card col-sm-3 "  v-for="a in adatok" :key="a.id" >
         <div class="card-body col-sm-2">
-           
-        <h3>Dokumentum száma</h3>
-        <h3>{{a.documentId}}</h3>
-      
+          <h3>Dokumentum száma</h3>
+          <h3>{{a.documentId}}</h3>
           <h4 class="title">Neve: {{a.fullname}}</h4>
           <h4>Neme: {{a.gender}}</h4>
           <h4>Születési év: {{a.year}}</h4>
-
-          
-
         </div>
-     
       </div>
-     
     </div>
   </div>
-  
 
-  
 </template>
 
 <script>
@@ -89,20 +54,15 @@ export default {
 }
 .card-body{
     background-color:aliceblue;
-   /* background-image: url("../assets/person_icon.png");*/
     min-width: 350px;
     height: 300px;
     text-align: left;
 }
-
  .container {
 
   text-align: center;
   background-image: url('../assets/usercard.gif');
-
 }   
-
-          
   
 .btn 
 {
@@ -110,7 +70,6 @@ export default {
     width:300px;
     background-color: #1a4fc2;
 }
-
 body{
   font-family: 'Nunito', sans-serif;
   padding: 50px;

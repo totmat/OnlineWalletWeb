@@ -1,14 +1,10 @@
 <template>
 <div class="body">
   <div class="container">
-    <h2>Welcome OnlineWallet web page</h2>
+    <h2>Welcome to the OnlineWallet website</h2>
   </div>
-   
 </div>
 </template>
-
-
-
 
 <script>
 // @ is an alias to /src
