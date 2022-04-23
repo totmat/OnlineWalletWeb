@@ -31,7 +31,8 @@ USE `onlinewallet`;
 
 DROP TABLE IF EXISTS `bankkartya`;
 CREATE TABLE IF NOT EXISTS `bankkartya` (
-  `cardNumber` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int(11) NOT NULL,
+  `documentId` varchar(255) COLLATE utf8mb4_hungarian_ci NOT NULL,
   `date` varchar(255) COLLATE utf8mb4_hungarian_ci NOT NULL,
   `securityCode` varchar(255) COLLATE utf8mb4_hungarian_ci NOT NULL,
   `firstName` varchar(255) COLLATE utf8mb4_hungarian_ci NOT NULL,
@@ -63,7 +64,8 @@ CREATE TABLE IF NOT EXISTS `felhasznalo` (
 
 DROP TABLE IF EXISTS `igazolvany`;
 CREATE TABLE IF NOT EXISTS `igazolvany` (
-  `doucmentId` int(11) NOT NULL AUTO_INCREMENT,
+ `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `documentId` varchar(255) NOT NULL,
   `fullname` varchar(255) NOT NULL,
   `gender` varchar(255) NOT NULL,
   `year` varchar(255) NOT NULL,
