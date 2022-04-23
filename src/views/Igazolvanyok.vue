@@ -1,6 +1,6 @@
 <template>
 
-
+<!--
  <div class="container" v-for="a in adatok" :key="a.id">
   <div class="row" >
     <div class="col-md-4" >
@@ -24,18 +24,18 @@
     </div>
   </div>
  </div>
-
-<div class="container mt-8">
-    <div class="row">
+-->
+<div class="container mt-4">
+    <div class="column">
       <div class="card col-sm-3 "  v-for="a in adatok" :key="a.id" >
-        <div class="card-body col-sm-4">
+        <div class="card-body col-sm-2">
            
         <h3>Dokumentum száma</h3>
         <h3>{{a.documentId}}</h3>
       
-          <p class="title">{{a.fullname}}</p>
-          <p>{{a.gender}}</p>
-          <p>{{a.year}}</p>
+          <h4 class="title">Neve: {{a.fullname}}</h4>
+          <h4>Neme: {{a.gender}}</h4>
+          <h4>Születési év: {{a.year}}</h4>
 
           
 
@@ -82,15 +82,7 @@ export default {
 
 
 <style scoped>
-.container {
 
-  gap: 10px;
-  gap: 10px 20px; /* row-gap column gap */
-  row-gap: 10px;
-  column-gap: 20px;
-  text-align: center;
-
-}
 .box
 {
     text-align: center;
@@ -98,12 +90,17 @@ export default {
 .card-body{
     background-color:aliceblue;
    /* background-image: url("../assets/person_icon.png");*/
-    min-width: 500px;
-    height: 500px;
-    text-align: right;
+    min-width: 350px;
+    height: 300px;
+    text-align: left;
 }
 
-    
+ .container {
+
+  text-align: center;
+  background-image: url('../assets/usercard.gif');
+
+}   
 
           
   

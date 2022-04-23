@@ -1,6 +1,5 @@
 <template>
   <h1>Bankkártya adatok</h1>
-  
 
 <div class="container">
   <div class="row text-center">
@@ -18,12 +17,10 @@
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcard_icon.png" height="250px"></h6>
           
         </div>
-        <div class="back card-block"  v-for="a in adatok" :key="a.cardNumber">
-            <h3>{{a.cardNumber}}</h3>
-            <h3>{{a.date}}</h3>
-            <h3>{{a.securityCode}}</h3>
-            
-         
+        <div class="back card-block"  v-for="a in adatok" :key="a.id">
+          <div class="card-body col-sm-6 card-1">
+            <div class="card"><h3 > Kártyák számai: {{a.documentId}}</h3> </div>       
+        </div>
         </div>
       </div>
     </div>
@@ -31,19 +28,20 @@
       <div class="card card-flip">
         <div class="front card-block">
           <h4 class="card-title">Kártya további adatai
-              
           </h4>
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcardback_icon.png" height="250px" alt=""></h6>
           <p class="card-text"></p>
         </div>
-        <div class="back card-block" v-for="a in adatok" :key="a.cardNumber">
-            <h3 >Kártya biztonsági kódja </h3>
-            <h3>{{a.securityCode}}</h3>
-           
+        
 
-
-  
-         
+        <div class="back card-block" v-for="a in adatok" :key="a.id">
+          <div class="card-body col-sm-6 card-1">
+            <div class="card">
+              <h3 >Kártya biztonsági kódja: {{a.securityCode}} </h3>
+              <div class="card"><h3>Lejárati dátuma : {{a.date}}</h3></div>
+            </div>
+        
+          </div>
         </div>
       </div>
     </div>
@@ -87,25 +85,11 @@
       </div>
     </div>
 
-    <div class="col-md-4 card-container">
-      <div class="card card-flip">
-        <div class="front card-block">
-          <span class="card-img-top fa" style="font-size: 4em">&#xf118;</span>
-          <h4 class="card-title">Front Title</h4>
-          <h6 class="card-subtitle text-muted">Front Sub-title</h6>
-          <p class="card-text">Front Text</p>
-        </div>
-        <div class="back card-block">
-          <p>Some example text</p>
-          <a href="#" class="btn btn-outline-primary">Read More</a>
-        </div>
-      </div>
-    </div>
-   
    
    
   </div>
 </div>
+
 </template>
 
 <script>
@@ -140,8 +124,8 @@ created()
 
           
 }  
+
  
-/* for demo purposes */
 
 .card-block .btn-outline-primary {
   width: 100%;
@@ -166,7 +150,7 @@ created()
   transform-style: preserve-3d;
   height: auto;
   transition: all 0.9s ease-out;
-  background: rgb(143, 175, 228);
+  background: rgb(120, 212, 219);
   border: none;
 }
 

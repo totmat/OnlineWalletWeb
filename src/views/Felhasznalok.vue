@@ -1,9 +1,9 @@
 <template>
-  <h1>adatok</h1>
+  <h1>Felhasználók adatai</h1>
 <div class="container mt-12">
   <div class="col-lg-5">
-        <div class="box card">
-            <form @submit.prevent="kuldes">
+        <div class="box">
+            <form @submit.prevent="kuldes" >
                 <div class="login ">
                    
                     <label>Név</label><br>
@@ -38,15 +38,15 @@
   
 <div>
   <div class="row">
-<div class="col-md-6">
-      <div class="card card-2" v-for="a in adatok" :key="a.id">
+<div class="col-md-8" >
+      <div class="card card-4" v-for="a in adatok" :key="a.id">
         <h3>{{a.username}}</h3>
       
       </div>
     </div>
-    <div class="card col-sm-4" v-for="a in adatok" :key="a.id">
+    <div class="card col-sm-5 " v-for="a in adatok" :key="a.id">
       
-       <div class="card-body col-sm-12 card-1  ">
+       <div class="card-body col-sm-12   ">
         <h3>{{a.fullname}}</h3>
         <h3>{{a.username}}</h3>
         <h3>{{a.email}}</h3>
@@ -176,6 +176,7 @@ body{
   font-family: 'Nunito', sans-serif;
   padding: 50px;
  
+ 
   
   }
 
@@ -206,26 +207,6 @@ body{
   max-height: 120px;
 }
 
-.card-1{
-  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
-
-.card-2{
-   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
-
-.card-3{
-   background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
 
 @media(max-width: 990px){
   .card{
