@@ -16,7 +16,7 @@ Ezután az oldal tetején tudunk navigálni az odalak között. Megjeleníti az 
 szereplő felhaszálókat (és adatait), bankártyákat (és adatait), igazolványokat (és adatait).
 
 
-## Screenshots
+## Alkalmazás működés közben
 
 //Fő oldal 
 
