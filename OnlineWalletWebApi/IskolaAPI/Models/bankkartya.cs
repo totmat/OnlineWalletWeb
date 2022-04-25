@@ -15,7 +15,7 @@ namespace OnlineWalletAPI.Models
         public int ID { get; set; }
         [Required]
         [StringLength(255)]
-        public string documentId { get; set; }
+        public string cardNumber { get; set; }
         [Required]
         [StringLength(255)]
         public string date { get; set; }

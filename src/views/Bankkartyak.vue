@@ -13,7 +13,7 @@
           <div class="card-body col-sm-6 card-1">
             <div class="card">
               <h3> 
-                Kártyák számai: {{a.documentId}}
+                Kártyák számai: {{a.cardNumber}}
               </h3> 
             </div>       
           </div>

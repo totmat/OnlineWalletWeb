@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {}
+    "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {}
   },
   "projects": {
-    "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {
+    "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
         "projectName": "OnlineWalletAPI",
-        "projectPath": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
-        "packagesPath": "C:\\Users\\aradi\\.nuget\\packages\\",
-        "outputPath": "D:\\Negyedik félév\\frontend\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
+        "projectPath": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+        "packagesPath": "C:\\Users\\sz0aratam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aradi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sz0aratam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
