@@ -25,6 +25,11 @@ const routes = [
     path:'/bankkartyak',
     name:'bankkartyak',
     component: () => import('../views/Bankkartyak.vue')
+  },
+  {
+  path:'/feltoltes',
+  name:'feltoltes',
+  component: ()=> import('../views/Feltoltes.vue')
   }
     
 ]

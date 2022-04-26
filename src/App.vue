@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/felhasznalok">Felhasznalok</router-link> |
     <router-link to="/bankkartyak">Bankártyák</router-link> |
-    <router-link to="/igazolvanyok">Igazolványok</router-link>
+    <router-link to="/igazolvanyok">Igazolványok</router-link> |
+    <router-link to="/feltoltes">Adatok feltöltése</router-link>
   </div>
   <router-view/>
 </template>

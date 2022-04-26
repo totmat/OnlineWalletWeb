@@ -4,6 +4,7 @@
     <h2>Welcome to the OnlineWallet website</h2>
   </div>
 </div>
+
 </template>
 
 <script>
@@ -21,6 +22,8 @@ export default {
 .body
 {
    background-image: url('../assets/creditcardicon.gif');
-  min-height: 25rem;
+   min-height: 30rem;
+  
 }
+
 </style>

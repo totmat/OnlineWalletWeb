@@ -2,36 +2,10 @@
   <h1>Felhasználók adatai</h1>
 <div class="container mt-12">
   <div class="col-lg-5">
-        <div class="box">
-            <form @submit.prevent="kuldes" >
-                <div class="adatfelvetel">
-                    <label>Név</label><br>
-                    <input type="text" name="nev" v-model="nev" >
-                    <br>
-                    <label >Felhasznaló neve</label>
-                    <br>
-                    <input type="text" name="username" v-model="username">
-                    <br>
-                    <label >jelszó</label>
-                    <br>
-                    <input type="text" name="password" v-model="password">
-                    <br>
-                    <label>email</label>
-                    <br>
-                    <input type="text" name="email" v-model="email">
-                    <br>
-                    <input type="submit" value="Jelentkezés" />
-                </div>
-            </form>
-        </div>
+        
     </div>
-    <div>
+    
       <div class="row">
-        <div class="col-md-8" >
-            <div class="card card-4" v-for="a in adatok" :key="a.id">
-              <h3>{{a.username}}</h3>
-            </div>
-        </div>
         <div class="card col-sm-5 " v-for="a in adatok" :key="a.id">
           <div class="card-body col-sm-12   ">
             <h3>{{a.fullname}}</h3>
@@ -40,7 +14,7 @@
           </div>
         </div>
       </div>
-    </div> 
+     
  </div>
 </template>
 
@@ -118,7 +92,7 @@ export default {
 </script>
 
 <style>
-
+/*
 .container {
 
   text-align: center;
@@ -188,5 +162,5 @@ body{
   .card{
     margin: 20px;
   }
-} 
+} */
 </style>
