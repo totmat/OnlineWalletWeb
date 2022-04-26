@@ -70,8 +70,10 @@ export default {
       kuldes()
       {
         let url = "http://localhost:5000/api/postfelhasznalok"
-        let adat = ''
-        if(this.id != '' && this.nev != '' && this.username != '' && this.email != '' && this.password != '')
+        let adat = {fullname: this.nev,email: this.email, username: this.username, password:this.password
+
+        }
+        if( this.nev != '' && this.username != '' && this.email != '' && this.password != '')
         {
           axios.post(url, adat)
           .then((resp) =>{console.log(resp)})

@@ -5871,11 +5871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+      "projectUniqueName": "C:\\Users\\sz0aratam\\Documents\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
       "projectName": "OnlineWalletAPI",
-      "projectPath": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+      "projectPath": "C:\\Users\\sz0aratam\\Documents\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
       "packagesPath": "C:\\Users\\sz0aratam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
+      "outputPath": "C:\\Users\\sz0aratam\\Documents\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sz0aratam\\AppData\\Roaming\\NuGet\\NuGet.Config",

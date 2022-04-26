@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a6K2JZeo6laNCtF7xol2opcjW7YMB0DxOM8PltR+/GMsJSiFSMWcWLtnOEAOL1ZmVi0mW1zx5pRaPiLQQqMSOw==",
+  "dgSpecHash": "Ik0GyuDYW8Vz+t4Aeg4G5W0d3ClV0ClPVSbLlyqK6DSrdd+zDxqbeWOaj4ofBtxndcfFzF9vlFQrJi3sFizaGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sz0aratam\\Videos\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
+  "projectFilePath": "C:\\Users\\sz0aratam\\Documents\\OnlineWalletWeb\\OnlineWalletWebApi\\IskolaAPI\\OnlineWalletAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sz0aratam\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sz0aratam\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
