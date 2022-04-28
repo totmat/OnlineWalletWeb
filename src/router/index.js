@@ -30,6 +30,17 @@ const routes = [
   path:'/feltoltes',
   name:'feltoltes',
   component: ()=> import('../views/Feltoltes.vue')
+  },
+  {
+    path:'/igazolvanyfeltoltes',
+    name:'igazolvanyfeltoltes',
+    component: ()=> import('../views/IgazolvanyokFeltoltes.vue')
+
+  },
+  {
+    path:'/bankkartyafeltoltes',
+    name:'bankkartyafeltoltes',
+    component: ()=> import('../views/BankkartyaFeltoltes.vue')
   }
     
 ]

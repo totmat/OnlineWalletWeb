@@ -39,6 +39,5 @@ namespace OnlineWalletAPI.Controllers
             await _context.SaveChangesAsync();
             return bankkartya.ID;
         }
-
     }
 }

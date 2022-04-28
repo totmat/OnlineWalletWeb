@@ -2,16 +2,16 @@
   <h1>Bankkártya adatok</h1>
 
 <div class="container">
-  <div class="row text-center">
-    <div class="col-md-3 card-container">
+  <div class="row">
+    <div class=" col-6 card-container">
       <div class="card card-flip">
         <div class="front card-block">
           <h4 class="card-title">Kártyák számai: <br></h4>
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcard_icon.png" height="250px"></h6>
         </div>
-        <div class="back card-block"  v-for="a in adatok" :key="a.id">
-          <div class="card-body col-sm-6 card-1">
-            <div class="card">
+        <div class="back card-block"  >
+          <div class="card-body card-1">
+            <div class="card" v-for="a in adatok" :key="a.cardNumber">
               <h3> 
                 Kártyák számai: {{a.cardNumber}}
               </h3> 
@@ -20,60 +20,26 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3 card-container">
+    <div class=" col-6 card-container">
       <div class="card card-flip">
         <div class="front card-block">
-          <h4 class="card-title">Kártya további adatai
-          </h4>
+          <h4 class="card-title">Kártya további adatai </h4>
           <h6 class="card-subtitle text-muted"><img src="../assets/creditcardback_icon.png" height="250px" alt=""></h6>
           <p class="card-text"></p>
         </div>
-        <div class="back card-block" v-for="a in adatok" :key="a.id">
-          <div class="card-body col-sm-6 card-1">
-            <div class="card">
+        <div class="back card-block ">
+          <div class="card-body">
+            <div class="card" v-for="a in adatok" :key="a.id">
               <h3 >Kártya biztonsági kódja: {{a.securityCode}} </h3>
-              <div class="card"><h3>Lejárati dátuma : {{a.date}}</h3></div>
+              <div class="card"   ><h3>Lejárati dátuma : {{a.date}}</h3></div>
             </div>
           </div>
         </div>
+        
       </div>
-    </div>
-    <div class="col-md-4 card-container">
-      <div class="card card-flip">
-        <div class="front card-block">
-          <h4 class="card-title">További adatok hozzáadása</h4>
-          <h6 class="card-subtitle text-muted">Front Sub-title</h6>
-          <p class="card-text"><img src="../assets/plus_icon.png" height="250px" alt=""></p>
-        </div>
-        <div class="back card-block">
-          <div class="container">
-            <div class="row ">
-                <div class="col-xs-2">
-                    <div class="box">
-                        <form>
-                            <div class="login">
-                                <label>Név</label><br>
-                                <input type="text" >
-                                <br>
-                                <label >Felhasznaló neve</label>
-                                <input type="text">
-                                <br>
-                                <label >jelszó</label>
-                                <br>
-                                <input type="text" >
-                                <br>
-                                <label>email</label>
-                                <br>
-                                <input type="text" >
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ </div>
+   
+        
   </div>
 </div>
 
@@ -84,7 +50,8 @@ import axios from "axios"
 export default {
 data(){
     return{
-        adatok:[]
+        adatok:[],
+        
     }
 },
 created()
@@ -94,42 +61,26 @@ created()
         .catch((error) =>console.log(error))
 }
 
-
 }
 </script>
 
 <style>
  
-.login{  
-        width: 400px;  
-        overflow: hidden; 
-        margin: 10px 10px 10px 20px;  
-        padding: 20px;  
-        background: #919fbd;  
-        border-radius: 15px ;
-        border: solid 5px #4975d3;
-
-          
-}  
-
- 
-
 .card-block .btn-outline-primary {
-  width: 100%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
+  width: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  
 }
 
 .card {
-  margin: 20px 0;
+  margin: 10px 0;
+  max-width: 800px;
 }
 
 /* Flip Cards CSS */
 .card-container {
-  perspective: 700px;
+  perspective: 1000px;
 }
 .card-flip {
   position: relative;

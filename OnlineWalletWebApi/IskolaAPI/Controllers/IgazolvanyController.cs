@@ -18,12 +18,21 @@ namespace OnlineWalletAPI.Controllers
         {
             _context = context;
         }
-        //GET: api/Felhasznalok
+        //GET: api/Igazolvanyok
         [HttpGet]
         [Route("api/Igazolvanyok")]
         public async Task<ActionResult<IEnumerable<igazolvany>>> GetIgazolvanyok()
         {
             return await _context.igazolvany.ToListAsync();
+        }
+        //POST: api/Igazolvanyok
+        [HttpPost]
+        [Route("api/postigazolvanyok")]
+        public async Task<ActionResult<int>> PostIgazolvanyok( igazolvany igazolvany)
+        {
+            _context.Add(igazolvany);
+            await _context.SaveChangesAsync();
+            return igazolvany.ID;
         }
     }
 }

@@ -1,4 +1,5 @@
 <template>
+<h1>Igazolványok adatai</h1>
 <div class="container mt-4">
     <div class="column">
       <div class="card col-sm-3 "  v-for="a in adatok" :key="a.id" >

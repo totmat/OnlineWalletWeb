@@ -1,10 +1,11 @@
 <template>
 <div class="body">
   <div class="container">
-    <h2>Welcome to the OnlineWallet website</h2>
+
+    <h2 >Welcome to the OnlineWallet website</h2>
+  
   </div>
 </div>
-
 </template>
 
 <script>
@@ -23,6 +24,8 @@ export default {
 {
    background-image: url('../assets/creditcardicon.gif');
    min-height: 30rem;
+   
+ 
   
 }
 
