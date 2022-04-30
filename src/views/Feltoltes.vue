@@ -13,17 +13,8 @@
                     <label>email</label>
                     <input type="text" name="email" v-model="email">
                     <input type="submit" value="Felhasználó feltöltése" />
-                    <b-alert show dismissible fade>Dismissible Alert!</b-alert>
+                 
 
-    <b-alert
-      variant="danger"
-      dismissible
-      fade
-      :show="showDismissibleAlert"
-      @dismissed="showDismissibleAlert=false"
-    >
-      Dismissible Alert!
-    </b-alert>
                    </div>
                 </div>
             </form >        
