@@ -9,6 +9,9 @@ Lehetőségek a szoftverben
         Felhasznalok tábla
         Igazolványok tábla
         Bankkártya tábla
+        Felhasználók hozzáadása
+        Igazolványok hozzáadása
+        Bankkártya hozzáadása
 
 Működése
 Az oldal betöltése után a főoldal köszönt az Onlinewallet - website -on.
