@@ -23,19 +23,19 @@ szereplő felhaszálókat (és adatait), bankártyákat (és adatait), igazolvá
 
 //Fő oldal 
 
-![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/Screenshots/welcomapage.PNG)
+![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/src/assets/HomePage.png)
 
 //Felhasználók oldal
 
-![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/Screenshots/CreditCardpage-1.PNG)
+![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/src/assets/FelhasznalokPage.png)
 
 
 //Bankkártyák oldal
 
-![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/Screenshots/CreditCardpage-2.PNG)
+![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/src/assets/BankkartyaPage.png)
 
 
 
+Az adatbázis módosítására szolgáló oldalak (Adatfeltöltési lehetőségek)
 
-Későbbiekben lehet majd használni az adatok feltöltése opciót, ahol közvetlenül az adatbázisba 
-módosítja, illetve ad hozzá adatokat.
+![App Screenshot](https://github.com/totmat/OnlineWalletWeb/blob/master/src/assets/FelhasznalokHozzaadasaPage.png)
